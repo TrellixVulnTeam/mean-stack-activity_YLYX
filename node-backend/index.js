@@ -5,6 +5,9 @@ let express = require('express'),
   bodyParser = require('body-parser'),
   mongoDb = require('./database/db');
 
+
+// require("dotenv").config();
+
 mongoose.Promise = global.Promise;
 mongoose.connect(mongoDb.db, {
   useNewUrlParser: true,
